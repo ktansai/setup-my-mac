@@ -15,6 +15,3 @@ unzip -q "$ZIP_FILE"
 
 echo "ダウンロードに使用したZIPファイルを削除します…"
 rm "$ZIP_FILE"
-
-echo "展開されたディレクトリ ${EXTRACT_DIR} に移動します…"
-cd "$EXTRACT_DIR"
