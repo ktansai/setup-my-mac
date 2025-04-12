@@ -18,3 +18,16 @@ rm "$ZIP_FILE"
 
 echo "展開されたディレクトリ ${EXTRACT_DIR} に移動します…"
 cd "$EXTRACT_DIR"
+
+read -p "setupをスタートしますか？ (y/n): " answer
+case "$answer" in
+    [Yy]* )
+        echo "install.sh を実行します…"
+        cd "$EXTRACT_DIR"
+        /bin/bash install.sh
+        ;;
+    * )
+        echo "中断しました。"
+        exit 0
+        ;;
+esac
