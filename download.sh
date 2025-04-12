@@ -18,15 +18,3 @@ rm "$ZIP_FILE"
 
 echo "展開されたディレクトリ ${EXTRACT_DIR} に移動します…"
 cd "$EXTRACT_DIR"
-
-read -p "setupをスタートしますか？ (y/n): " answer
-case "$answer" in
-    [Yy]* )
-        echo "setup-mac.sh を実行します…"
-        /bin/bash setup-mac.sh
-        ;;
-    * )
-        echo "中断しました。"
-        exit 0
-        ;;
-esac
