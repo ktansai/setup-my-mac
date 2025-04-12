@@ -22,9 +22,9 @@ cd "$EXTRACT_DIR"
 read -p "setupをスタートしますか？ (y/n): " answer
 case "$answer" in
     [Yy]* )
-        echo "install.sh を実行します…"
+        echo "setup-mac.sh を実行します…"
         cd "$EXTRACT_DIR"
-        /bin/bash install.sh
+        /bin/bash setup-mac.sh
         ;;
     * )
         echo "中断しました。"
