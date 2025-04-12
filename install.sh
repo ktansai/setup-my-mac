@@ -23,7 +23,6 @@ read -p "setupをスタートしますか？ (y/n): " answer
 case "$answer" in
     [Yy]* )
         echo "setup-mac.sh を実行します…"
-        cd "$EXTRACT_DIR"
         /bin/bash setup-mac.sh
         ;;
     * )
