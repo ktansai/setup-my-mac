@@ -10,7 +10,6 @@ brew install --cask \
   google-japanese-ime \
   karabiner-elements \
   spotify \
-  adobe-creative-cloud \
   macs-fan-control
 
 mas install 1398373917 # Upnote
